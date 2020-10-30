@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Unicode</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        /* Template Used from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_webpage&stacked=h  */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 866px}
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height:auto;}
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <p><a href="#">Page 1</a></p>
+            <p><a href="#">Page 2</a></p>
+            <p><a href="#">Page 3</a></p>
+        </div>
+        <div class="col-sm-8 text-left">
+            <h1>What is Unicode?</h1>
+            <p>
+                Unicode is a text format designed to standardise binary representation of
+                every glyph in every language, so that every device can display any character
+                correctly. Additionally, it provides support for small images, known as emoji,
+                which can not only be displayed, but also modified in various ways.
+            </p>
+
+            <h1>History of Unicode</h1>
+            <p>
+                Before Unicode, the latin alphabet (the ABC's) were encoded using a standard
+                known as the American Standard Code for Information Interchange, or ASCII for
+                short. This standard used 7 bits to encode each letter's uppercase and lowercase
+                forms, digits and punctuation, as well as some additional control codes which were
+                used to determine line breaks and such. 7 bits allowed for 128 different characters
+                and codes.
+            </p>
+            <p>
+                The standard's first edition was published in 1963, and was followed by multiple
+                revisions until 1986. During this time, ASCII was the main method of information
+                interchange within English-speaking countries.
+            </p>
+            <p>
+                With the introduction of 8-bit and 16-bit computer systems, ASCII was amended to
+                use a full byte, or 8 bits, to represent each character. This allowed the standard
+                to be extended and include an additional 128 characters. New standards were introduced
+                which could include non-latin characters.
+            </p>
+            <p>
+                However, the 8-bit representation was still limited as it could usually only show
+                two separate scripts at once. In some cases, such as Chinese or Japanese which have
+                thousands of unique characters, even 8 bits per character was insufficient.
+            </p>
+            <p>
+                A draft proposal in 1988 introduced the idea of Unicode, a text encoding standard
+                for all of the world's languages. The initial idea used 16 bits per character,
+                giving 65,536 different characters. The standard was first published in 1991 by
+                the newly established Unicode Consortium.
+            </p>
+            <p>
+                In 1996, Unicode 2.0 was published, and with it a new encoding system which removed
+                the 16-bit restriction. This allowed for the inclusion of over a million new
+                characters, such as hieroglyphs and Chinese characters which were seldom used.
+            </p>
+            <p>
+                Before Unicode, Japanese phone networks had their own standards to support the
+                thousands of characters they used. In addition to their script, they were able
+                to allocate some values to small images which they called emoji. In 2007, the
+                Unicode Consortium was pressured by US phone manufacturers to add emoji to the
+                standard so that they could compete in the Japanese phone market.
+            </p>
+            <p>
+                The current version of Unicode is 13.0, which includes a total of 154 different
+                scripts as well as thousands of additional characters for notation in subjects
+                such as mathematics or music, as well as thousands of emoji.
+            </p>
+        </div>
+        <div class="col-sm-2 sidenav">
+            <div class="well">
+                <p>Temp</p>
+            </div>
+            <div class="well">
+                <p>Temp</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid text-center">
+    <p>Durham Computer Science 2020</p>
+</footer>
+
+</body>
+</html>
