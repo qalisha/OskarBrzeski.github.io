@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1000px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <p><a href="index.html">Welcome</a></p>
+            <p><a href="Communications.html">Communications</a></p>
+            <p><a href="Unicode.html">Unicode</a></p>
+            <p><a href="Medicine.html">Medicine</a></p>
+            <p><a href="Crime.html">Crime</a></p>
+      
+    </div>
+
+<div class="col-sm-8 text-left"> 
+<h1>The Positive Impact Of Computer Science: Space </h1>
+<p>
+It’s not too infrequent when talking about space exploration that we hear about how our phones are more powerful than the rocket used in Apollo 11,
+but launching technology into space hasn’t stayed fixed to exploration, instead we have almost 3000 satellites orbiting earth performing various
+tasks for us, from The Hubble Space Telescope to GPS satellites, they’re all a feat of computational innovation.
+</p>
+<h3>Additional examples of computer science being used in space are:</h3>
+<ul>
+    <li>Scientific research using data within space</li>
+    <li>Unmanned space exploration such as rovers to Mars</li>
+    <li>Spacecraft that can be controlled digitally to allow for easy access</li>
+</ul>
+<h3>Satellite Internet</h3>
+<p>
+The first commercial communcations satellite was launched in July 1962, and since, many have been sent up in order to support communications around Earth.
+Many satellites used for these purposes are geosynchronous, which means that they orbit Earth and travel with the Earths rotation, so they stay above one
+fixed point on the Earth at all times. However, in recent years more low orbit satellites have been developed which would decrease latency when connecting
+to them and these will be set up in constellations to allow access from any point on Earth. Although we aren't quite there yet, this is looking to be a
+real possibility in the future to able to access high speed, low latency internet connectivity from anywhere on Earth, without requiring current network
+masts dotted around the area.
+</p>
+
+<h3>Unmanned space exploration</h3>
+<p>
+Unmanned space exploration begun in 1958 with the explorers program by NASA. It was created to place a scientific satellite into orbit in order to complete
+many experiments in space. Since then, with an increase in computational power and affordability, many other unmanned space missions have happened and we
+have been able to send robots to other planets. For example, in 2011, NASA launched the curiosity rover to Mars, which landed in 2012. It has since been
+assessing the habitability of mars and has been able to analyze samples of the surrounding environment. This has allowed us to gather images of Mars which
+we may not be able to do in person for many more years. The image below is the view of "Mount Sharp" on Mars, taken in September 2015:
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/PIA19912-MarsCuriosityRover-MountSharp-20151002.jpg/800px-PIA19912-MarsCuriosityRover-MountSharp-20151002.jpg" alt="Mount Sharp">
+
+
+<h3>Additional Information</h3>
+<p>Below are some links where you can find out more information about Satellite Constelations or more accessible space missions:
+    <a href=https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/Meteosat_Third_Generation/Satellite_constellation>here</a>,
+or
+    <a href=https://www.nationalgeographic.com/science/space/space-exploration/future-spaceflight/>here</a>.
+</p>
+</div>
+</div>
+<footer class="container-fluid text-center">
+    <p>Durham Computer Science 2020</p>
+  </footer>
+  
+  </body>
+  </html>
